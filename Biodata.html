@@ -8,64 +8,36 @@
  <link rel="stylesheet" type="text/css" href="biodata.css">
 </head>
 <body>
-    <table border="2px"> <td>
- <div style="background-color: cornflowerblue;">
-    <h1 style="text-align: center;">Fill your Bio Data</h1>   </div>
-  <p>  <form>
-    <div><B class="p15"> STUDENT NAME :</B>
-        <input type="text" value="first name">
-        <input type="text" value="last name">    </div>
-    </form></p>
-   <P><form>
-        <div><B class="p15">F'NAME :</B> 
-            <input type="text" value="first name">
-            <input type="text" value="last name"></div>
-        </form></P> 
-   <p>
-     <h2  class="p15" >Select one :</h2> 
-       <div>
-           <Form>
+    <table border="2px" id="table"> <td>
+    <div id="a1"> Fill your Bio Data</div>
+ <br> 
+     <form>
+        <h2 class="p15"> STUDENT NAME :
+             <input type="text" placeholder="first name" required>
+             <input type="text" placeholder="last name" required>   
+        </h2>
+
+        <h2 class="p15"> F'NAME :
+              <input type="text" placeholder="first name" required>
+              <input type="text" placeholder="last name" required>
+        </h2>
+        <h2  class="p15" >Select one :</h2> 
                <input type="radio" name="gender">Male
                <input type="radio"name="gender">Female
                <input type="radio"name="gender">other
-           </Form>
-       </div>
-   </p>
-   <P>
-       <h2 class="p15" >
-           Study in Branch:
-       </h2>
-       <div>
-        <Form>
-            <input type="radio" name="Branch">Computer scince
-            <input type="radio"name="Branch">Mechanical
-            <input type="radio"name="Branch">IT
-        </Form> </P>
-     <h2 class="p15">Mob. Number:
-         <Form>
-        <input type="number"  >
-        </Form>
-</h2>
-              
-   <P>
-       <h2  class="p15"> D.O.B. : 
-          <form>
-            <input type="date">
+       <h2 class="p15" > Study in Branch:   </h2>
+              <input type="radio" name="Branch">Computer scince
+              <input type="radio"name="Branch">Mechanical
+              <input type="radio"name="Branch">IT
+       <h2 class="p15">Mob. Number: </h2>
+             <input type="number" placeholder="Enter MOB. Number" >
+       <h2  class="p15"> D.O.B. :  </h2>   
+              <input type="date"> 
+       <h2  class="p15"> Email id :
+            <input type="email" name="email" id="email" required placeholder="email@gmail.com"></h2>           
+            <input type="submit">
+            <input type="button" value="cancel">
         </form>
-        </h2> 
-        </P> 
-        <form> <h2  class="p15"> Email id :
-        <input type="email" name="email" id="email" required></h2>
-        </form>
-        <p>
-            <form>
-                <input type="submit">
-            </form>
-            <form>
-                <input type="submit" value="cancel">
-            </form>
-         
-        </p>
     </td></table>
 </body>
 </html>
